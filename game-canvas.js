@@ -13,6 +13,11 @@ class GameCanvas {
         this.ctx.strokeRect(x, y, w, h);
     }
 
+    FillBackground(color) {
+        this.ctx.fillStyle = color;
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+
     Resize(width, height) {
         this.canvas.width = width;
         this.canvas.height = height;
